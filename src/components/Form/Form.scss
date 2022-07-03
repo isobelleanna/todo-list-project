@@ -1,0 +1,22 @@
+@use "../../assets/sass/variables" as *;
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $colour-headline;
+  width: 71vw;
+  &__input {
+    width: 62vw;
+    height: 3vh;
+    border: none;
+  }
+  &__submit {
+    height: 4vh;
+    width: 5vh;
+    border: none;
+    background-color: $colour-button;
+    color: $colour-headline;
+  }
+}

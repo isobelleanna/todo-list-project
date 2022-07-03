@@ -28,7 +28,6 @@ const TodoList = ({
           id={index}
         />
       ))}
-
       <Message activeList={activeList} />
     </div>
   );

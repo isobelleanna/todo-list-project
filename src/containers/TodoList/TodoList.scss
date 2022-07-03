@@ -1,0 +1,11 @@
+@use "../../assets/sass/variables" as *;
+
+.todo-list {
+  border: 1px solid black;
+  background-color: $colour-card-background;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

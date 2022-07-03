@@ -3,14 +3,7 @@ import "./ItemCard.scss";
 import Checkbox from "../Checkbox/Checkbox";
 import Button from "../Button/Button";
 
-const ItemCard = ({
-  label,
-  checked,
-  onCheckboxChange,
-  handleDelete,
-  displayCard,
-  name,
-}) => {
+const ItemCard = ({ label, checked, onCheckboxChange, handleDelete }) => {
   return (
     <div>
       <div className="item-card">
@@ -21,7 +14,7 @@ const ItemCard = ({
           <p className="active">{label}</p>
         )}
         <div onClick={handleDelete}>
-          <Button buttonText="🗑" buttonStyle={name} />
+          <Button buttonText="🗑" buttonStyle="button" />
         </div>
       </div>
     </div>

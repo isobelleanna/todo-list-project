@@ -7,7 +7,7 @@ const Nav = ({ onReset }) => {
     <div className="nav">
       <h1 className="nav__title">My Todos</h1>
       <div onClick={onReset}>
-        <Button buttonStyle="button__nav" buttonText="Reset" />
+        <Button buttonStyle="button" buttonText="Reset" />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Form = ({ handleSubmit, getInput }) => {
           onInput={getInput}
         />
       </label>
-      <input type="submit" value="➕" />
+      <input className="form__submit" type="submit" value="➕" />
     </form>
   );
 };
