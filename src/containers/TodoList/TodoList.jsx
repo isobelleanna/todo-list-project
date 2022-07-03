@@ -18,14 +18,14 @@ const TodoList = ({
     <div className="todo-list">
       <Nav onReset={onReset} />
       <Form handleSubmit={handleSubmit} />
-      {todoArr.map((item) => (
+      {todoArr.map((item, index) => (
         <ItemCard
           key={item.id}
           label={item.item}
           checked={checked}
           onCheckboxChange={onCheckboxChange}
           handleDelete={handleDelete}
-          name={item.id}
+          id={index}
         />
       ))}
 

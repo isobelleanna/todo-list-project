@@ -31,7 +31,10 @@ function App() {
     setChecked(!checked);
   };
   const handleDelete = (event) => {
-    console.log(event.target);
+    const index = event.target.id;
+    const newArr = [...todoList];
+    newArr.splice(index, 1);
+    setTodoList(newArr);
   };
 
   return (
